@@ -9,8 +9,16 @@
 <body>
     <script>
         let result = parseInt(prompt("Enter a number where the fizzbuzz ends.", ))
-        for (let i = 0; i <= result; i++) {
-            console.log(i);
+        for (let i = 1; i <= result; i++) {
+            if (i % 3 === 0 && i % 5 === 0){
+                console.log("FIZZBUZZ");
+            } else if (i % 3 === 0) {
+                console.log("FIZZ");
+            } else if (i % 5 === 0) {
+                console.log("BUZZ");
+            } else {
+                console.log(i);
+            }
         }
     </script>
 
